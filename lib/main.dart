@@ -122,6 +122,7 @@
 // }
 import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
+import 'modules/auth/splash_screen.dart';
 
 void main() {
   runApp(const StaffSphereApp());
@@ -136,7 +137,9 @@ class StaffSphereApp extends StatelessWidget {
       title: "StaffSphere",
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: const Placeholder(), // will replace with splash soon
+      // home: const Placeholder(), // will replace with splash soon
+      home: const SplashScreen(),
+
     );
   }
 }
